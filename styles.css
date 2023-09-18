@@ -1,1 +1,28 @@
-/*  your css code here. If applicable */
+/* styles.css */
+
+/* Style the container element */
+#container {
+    margin: 20px;
+    position: relative; /* Needed for pseudo-elements */
+}
+
+/* Style the content before the container */
+#container::before {
+    content: "Before Content";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute;
+    top: -30px; /* Adjust as needed */
+    left: 0;
+}
+
+/* Style the content after the container */
+#container::after {
+    content: "After Content";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute;
+    bottom: -30px; /* Adjust as needed */
+    left: 0;
+}
+
